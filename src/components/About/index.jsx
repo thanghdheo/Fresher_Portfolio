@@ -18,7 +18,7 @@ function About() {
       id: 2,
       title: "Experience",
       icon: <FaAward />,
-      desc: " 6 month experience of working as a web developer at Ho Chi Minh city.",
+      desc: " 6 months experience of working as a web developer at Ho Chi Minh city.",
     },
   ];
   return (
@@ -55,7 +55,7 @@ function About() {
 
           <p>
             Hi guys ! I'm Hồ Đức Thắng, I was born in 2000 and I'm from Vung Tau
-            city. I'm Fresher Front-end Developer. I have 6 month experience of
+            city. I'm Fresher Front-end Developer. I have 6 months experience of
             working as a web developer at Ho Chi Minh city.{" "}
           </p>
 
