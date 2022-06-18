@@ -6,6 +6,7 @@ import {
   AiOutlineHome,
   AiOutlineUser,
 } from "react-icons/ai";
+import { VscFolderLibrary } from "react-icons/vsc";
 import { RiServiceLine } from "react-icons/ri";
 import "./nav.css";
 
@@ -22,9 +23,14 @@ const icons = [
     url: "#experience",
     icon: <AiOutlineBook />,
   },
+
   {
     url: "#services",
     icon: <RiServiceLine />,
+  },
+  {
+    url: "#portfolio",
+    icon: <VscFolderLibrary />,
   },
   {
     url: "#contact",

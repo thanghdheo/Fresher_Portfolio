@@ -1,6 +1,5 @@
 import React from "react";
 import "./testimonials.css";
-import AVT from "../../asset/avatar1.jpg";
 // core version + navigation, pagination modules:
 import { A11y, Navigation, Pagination, Scrollbar } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -24,21 +23,21 @@ function Testimonials() {
       >
         <SwiperSlide className="testimonials">
           <div className="client__avatar">
-            <img src={AVT} alt="" />
+            <img src="" alt="" />
           </div>
           <h5>Ernest Achiever</h5>
           <small className="client__review">Description</small>
         </SwiperSlide>
         <SwiperSlide className="testimonials">
           <div className="client__avatar">
-            <img src={AVT} alt="" />
+            <img src="" alt="" />
           </div>
           <h5>Ernest Achiever</h5>
           <small className="client__review">Description</small>
         </SwiperSlide>
         <SwiperSlide className="testimonials">
           <div className="client__avatar">
-            <img src={AVT} alt="" />
+            <img src="" alt="" />
           </div>
           <h5>Ernest Achiever</h5>
           <small className="client__review">Description</small>

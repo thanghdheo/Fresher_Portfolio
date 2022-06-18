@@ -1,14 +1,20 @@
-import React from 'react'
-import {BsLinkedin,BsGithub,BsDribbble} from 'react-icons/bs'
+import React from "react";
+import { BsLinkedin, BsGithub, BsDribbble } from "react-icons/bs";
 
 function HeaderSocials() {
   return (
     <div className="header__socials">
-        <a href="https://linkedin.com"  target="_blank"><BsLinkedin /></a>
-        <a href="https://github.com"  target="_blank"><BsGithub /></a>
-        <a href="https://dirbbble.com"  target="_blank"><BsDribbble /></a>
+      <a
+        href="https://www.linkedin.com/in/th%E1%BA%AFng-h%E1%BB%93-%C4%91%E1%BB%A9c-01ba4b233/"
+        target="_blank"
+      >
+        <BsLinkedin />
+      </a>
+      <a href="https://github.com/thanghdheo/" target="_blank">
+        <BsGithub />
+      </a>
     </div>
-  )
+  );
 }
 
-export default HeaderSocials
+export default HeaderSocials;

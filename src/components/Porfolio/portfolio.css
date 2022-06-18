@@ -10,6 +10,9 @@
   border-radius: 2rem;
   border: 1px solid transparent;
   transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .portfolio__item:hover {
@@ -23,13 +26,32 @@
 }
 
 .portfolio__item h3 {
-  margin: 1.2rem 0 2rem;
+  margin: 0.8rem 0;
+}
+
+.portfolio__item h4 {
+  margin: 0.8rem 0;
+  color: var(--color-light);
+
+}
+
+.portfolio__item h5 {
+  margin: 0.8rem 0;
+
+}
+.portfolio__item p {
+  margin: 0.8rem 0;
+}
+
+.portfolio__item small {
+  font-style: italic;
+  color: var(--color-light);
 }
 
 .portfolio__item-cta {
   display: flex;
   gap: 1rem;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 
 @media screen and (max-width: 1024px) {

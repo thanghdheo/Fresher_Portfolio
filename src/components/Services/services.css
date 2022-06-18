@@ -1,6 +1,6 @@
 .services__container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1fr, 1fr);
   gap: 3rem;
 }
 
@@ -23,12 +23,16 @@
   padding: 2rem;
   border-radius: 0 0 2rem 2rem;
   box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.service__head h2 {
+  text-align: center;
 }
 
 .service__head h3 {
-  color: var(--color-bg);
-  font-size: 1rem;
-  text-align: center;
+  opacity: 0.95;
+  font-size: 20px;
 }
 
 .service__list {
@@ -36,18 +40,28 @@
 }
 
 .service__list li {
-  display: flex;
+  /* display: flex; */
   gap: 1rem;
   margin-bottom: 0.7rem;
+  align-items: center;
+  padding: 12px 0;
 }
 
 .service__list-icon {
   color: var(--color-primary);
   margin-top: 2px;
+  margin-right: 2px;
 }
 
 .service__list p {
   font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.service__list small {
+  font-size: 0.75rem;
+  font-style: italic;
+  display: block;
 }
 
 @media screen and (max-width: 1024px) {
