@@ -1,6 +1,7 @@
 import _ from "lodash";
 import React from "react";
 import { BsPatchCheckFill } from "react-icons/bs";
+import { Bounce, Fade } from "react-reveal";
 import "./experience.css";
 
 function Experience() {
@@ -96,104 +97,105 @@ function Experience() {
     <section id="experience">
       <h5>What Skills I Have</h5>
       <h2>My Knowledge</h2>
-
-      <div className="container experience__container">
-        <div className="experience__frontend">
-          <h3>Programming Languages</h3>
-          <div className="experience__content">
-            {_.map(ProgramingLanguages, (item, index) => {
-              return (
-                <article
-                  key={_.get(item, "id")}
-                  className="experience__details"
-                >
-                  <BsPatchCheckFill className="experience__details-icon" />
-                  <div>
-                    <h4>{_.get(item, "title")}</h4>
-                    <small className="text-light">Experienced</small>
-                  </div>
-                </article>
-              );
-            })}
+      <Fade>
+        <div className="container experience__container">
+          <div className="experience__frontend">
+            <h3>Programming Languages</h3>
+            <div className="experience__content">
+              {_.map(ProgramingLanguages, (item, index) => {
+                return (
+                  <article
+                    key={_.get(item, "id")}
+                    className="experience__details"
+                  >
+                    <BsPatchCheckFill className="experience__details-icon" />
+                    <div>
+                      <h4>{_.get(item, "title")}</h4>
+                      <small className="text-light">Experienced</small>
+                    </div>
+                  </article>
+                );
+              })}
+            </div>
+          </div>
+          <div className="experience__frontend">
+            <h3>Frameworks Library</h3>
+            <div className="experience__content">
+              {_.map(Frameworks, (item, index) => {
+                return (
+                  <article
+                    key={_.get(item, "id")}
+                    className="experience__details"
+                  >
+                    <BsPatchCheckFill className="experience__details-icon" />
+                    <div>
+                      <h4>{_.get(item, "title")}</h4>
+                      <small className="text-light">Experienced</small>
+                    </div>
+                  </article>
+                );
+              })}
+            </div>
+          </div>
+          <div className="experience__frontend">
+            <h3>Version Control</h3>
+            <div className="experience__content">
+              {_.map(Control, (item, index) => {
+                return (
+                  <article
+                    key={_.get(item, "id")}
+                    className="experience__details"
+                  >
+                    <BsPatchCheckFill className="experience__details-icon" />
+                    <div>
+                      <h4>{_.get(item, "title")}</h4>
+                      <small className="text-light">Experienced</small>
+                    </div>
+                  </article>
+                );
+              })}
+            </div>
+          </div>
+          <div className="experience__frontend">
+            <h3>Application Programming Interface ( API )</h3>
+            <div className="experience__content">
+              {_.map(API, (item, index) => {
+                return (
+                  <article
+                    key={_.get(item, "id")}
+                    className="experience__details"
+                  >
+                    <BsPatchCheckFill className="experience__details-icon" />
+                    <div>
+                      <h4>{_.get(item, "title")}</h4>
+                      <small className="text-light">Experienced</small>
+                    </div>
+                  </article>
+                );
+              })}
+            </div>
+          </div>
+          <div className="experience__frontend">
+            <h3>Others</h3>
+            <div className="experience__content">
+              {_.map(Others, (item, index) => {
+                return (
+                  <article
+                    key={_.get(item, "id")}
+                    className="experience__details"
+                  >
+                    <BsPatchCheckFill className="experience__details-icon" />
+                    <div>
+                      <h4>{_.get(item, "title")}</h4>
+                      <small className="text-light">Experienced</small>
+                    </div>
+                  </article>
+                );
+              })}
+            </div>
           </div>
         </div>
-        <div className="experience__frontend">
-          <h3>Frameworks Library</h3>
-          <div className="experience__content">
-            {_.map(Frameworks, (item, index) => {
-              return (
-                <article
-                  key={_.get(item, "id")}
-                  className="experience__details"
-                >
-                  <BsPatchCheckFill className="experience__details-icon" />
-                  <div>
-                    <h4>{_.get(item, "title")}</h4>
-                    <small className="text-light">Experienced</small>
-                  </div>
-                </article>
-              );
-            })}
-          </div>
-        </div>
-        <div className="experience__frontend">
-          <h3>Version Control</h3>
-          <div className="experience__content">
-            {_.map(Control, (item, index) => {
-              return (
-                <article
-                  key={_.get(item, "id")}
-                  className="experience__details"
-                >
-                  <BsPatchCheckFill className="experience__details-icon" />
-                  <div>
-                    <h4>{_.get(item, "title")}</h4>
-                    <small className="text-light">Experienced</small>
-                  </div>
-                </article>
-              );
-            })}
-          </div>
-        </div>
-        <div className="experience__frontend">
-          <h3>Application Programming Interface ( API )</h3>
-          <div className="experience__content">
-            {_.map(API, (item, index) => {
-              return (
-                <article
-                  key={_.get(item, "id")}
-                  className="experience__details"
-                >
-                  <BsPatchCheckFill className="experience__details-icon" />
-                  <div>
-                    <h4>{_.get(item, "title")}</h4>
-                    <small className="text-light">Experienced</small>
-                  </div>
-                </article>
-              );
-            })}
-          </div>
-        </div>
-        <div className="experience__frontend">
-          <h3>Others</h3>
-          <div className="experience__content">
-            {_.map(Others, (item, index) => {
-              return (
-                <article
-                  key={_.get(item, "id")}
-                  className="experience__details"
-                >
-                  <BsPatchCheckFill className="experience__details-icon" />
-                  <div>
-                    <h4>{_.get(item, "title")}</h4>
-                    <small className="text-light">Experienced</small>
-                  </div>
-                </article>
-              );
-            })}
-          </div>
-        </div>
-      </div>
+      </Fade>
     </section>
   );
 }

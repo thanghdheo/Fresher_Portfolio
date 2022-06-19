@@ -1,5 +1,6 @@
 import React from "react";
 import { BiCheck } from "react-icons/bi";
+import { Zoom } from "react-reveal";
 import PITEK from "../../asset/0001.png";
 import "./services.css";
 
@@ -68,7 +69,9 @@ function Services() {
                 </small>
               </li>
             </ul>
-            <img src={PITEK} alt="" height={500} />
+            <Zoom>
+              <img src={PITEK} alt="" height={500} />
+            </Zoom>
           </div>
         </article>
       </div>

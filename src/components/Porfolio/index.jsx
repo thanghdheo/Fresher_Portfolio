@@ -7,6 +7,7 @@ import RFID from "../../asset/rfid.png";
 import DISNEY from "../../asset/disney.png";
 import "./portfolio.css";
 import _ from "lodash";
+import { Fade } from "react-reveal";
 function Portfolio() {
   const projects = [
     {
@@ -74,40 +75,41 @@ function Portfolio() {
     <section id="portfolio">
       <h5>What i Do</h5>
       <h2>My Projects</h2>
+      <Fade>
+        <div className="container portfolio__container">
+          {_.map(projects, (item, index) => {
+            return (
+              <article key={_.get(item, "id")} className="portfolio__item">
+                <div>
+                  <div className="portfolio__item-image">
+                    <img src={_.get(item, "image")} alt="" />
+                  </div>
+                  <h3>{_.get(item, "name")}</h3>
+                  <h4>{_.get(item, "type")}</h4>
 
-      <div className="container portfolio__container">
-        {_.map(projects, (item, index) => {
-          return (
-            <article key={_.get(item, "id")} className="portfolio__item">
-              <div>
-                <div className="portfolio__item-image">
-                  <img src={_.get(item, "image")} alt="" />
+                  <h5>Technologies using:</h5>
+                  <small>{_.get(item, "tech")}</small>
+                  <h5>Functions:</h5>
+                  <small>{_.get(item, "func")}</small>
                 </div>
-                <h3>{_.get(item, "name")}</h3>
-                <h4>{_.get(item, "type")}</h4>
 
-                <h5>Technologies using:</h5>
-                <small>{_.get(item, "tech")}</small>
-                <h5>Functions:</h5>
-                <small>{_.get(item, "func")}</small>
-              </div>
-
-              <div className="portfolio__item-cta">
-                <a href={_.get(item, "git")} className="btn" target="_blank">
-                  Github
-                </a>
-                <a
-                  href={_.get(item, "demo")}
-                  className="btn btn-primary"
-                  target="_blank"
-                >
-                  Live Demo
-                </a>
-              </div>
-            </article>
-          );
-        })}
-      </div>
+                <div className="portfolio__item-cta">
+                  <a href={_.get(item, "git")} className="btn" target="_blank">
+                    Github
+                  </a>
+                  <a
+                    href={_.get(item, "demo")}
+                    className="btn btn-primary"
+                    target="_blank"
+                  >
+                    Live Demo
+                  </a>
+                </div>
+              </article>
+            );
+          })}
+        </div>
+      </Fade>
     </section>
   );
 }
