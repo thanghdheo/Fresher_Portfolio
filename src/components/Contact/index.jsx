@@ -5,6 +5,7 @@ import {
 } from "react-icons/ai";
 import React, { useRef } from "react";
 import emailjs from "emailjs-com";
+import swal from "sweetalert";
 import "./contact.css";
 
 function Contact() {
@@ -28,6 +29,7 @@ function Contact() {
         }
       );
 
+    swal("Thông báo", "Gửi email thành công","success");
     e.target.reset();
   };
   return (

@@ -44,8 +44,13 @@ function Services() {
                   <BiCheck className="service__list-icon" /> Handle logic and
                   integrated API.
                 </small>
+                <small>
+                  {" "}
+                  <BiCheck className="service__list-icon" /> 
+                  Support content team to advertise the company.
+                </small>
               </li>
-              <li>
+              {/* <li>
                 <p>
                   The projects of the company that I have participated in such
                   as :
@@ -55,7 +60,7 @@ function Services() {
                   <BiCheck className="service__list-icon" />
                   Web Admin, Human Resources Manager.
                 </small>
-              </li>
+              </li> */}
               <li>
                 <p>My Gains :</p>
                 <small>
