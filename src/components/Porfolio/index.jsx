@@ -63,7 +63,7 @@ function Portfolio() {
     {
       id: 6,
       image: TODOLIST,
-      name: "TO DO LIST",
+      name: "TODOLIST",
       type: "Personal project",
       tech: " ReactJs Hook, Reactstrap, React toolkit, Material UI Icons, UUID",
       func: "Add job to do, Disabled job when have done, Search job, Search job by status, Filter job by status, Save data in localstorage",

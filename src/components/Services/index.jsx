@@ -16,7 +16,7 @@ function Services() {
             <h2>PITEK TECHNOLOGY JOINT STOCK COMPANY</h2>
             <h3>2022</h3>
           </div>
-          <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <div style={{ display: "flex", justifyContent: "space-between", padding:"24px" }}>
             <ul className="service__list">
               <li>
                 <p>Position : </p>
@@ -44,13 +44,13 @@ function Services() {
                   <BiCheck className="service__list-icon" /> Handle logic and
                   integrated API.
                 </small>
-                <small>
+                {/* <small>
                   {" "}
-                  <BiCheck className="service__list-icon" /> 
+                  <BiCheck className="service__list-icon" />
                   Support content team to advertise the company.
-                </small>
+                </small> */}
               </li>
-              {/* <li>
+              <li>
                 <p>
                   The projects of the company that I have participated in such
                   as :
@@ -58,9 +58,13 @@ function Services() {
 
                 <small>
                   <BiCheck className="service__list-icon" />
-                  Web Admin, Human Resources Manager.
+                  Web Admin (Real estate project).
                 </small>
-              </li> */}
+                <small>
+                  <BiCheck className="service__list-icon" />
+                  Human Resources Manager (Employee management and leave management project).
+                </small>
+              </li>
               <li>
                 <p>My Gains :</p>
                 <small>

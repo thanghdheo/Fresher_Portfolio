@@ -12,7 +12,7 @@ function Header() {
         <Fade top>
           <h5>Hello I'm</h5>
           <h1>Hồ Đức Thắng</h1>
-          <h5 className="text-light">Frontend Developer</h5>
+          <h5 className="text-light">Front-end Developer</h5>
           <CTA />
         </Fade>
         <HeaderSocials />
