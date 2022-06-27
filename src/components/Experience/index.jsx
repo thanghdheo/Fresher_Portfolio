@@ -34,6 +34,10 @@ function Experience() {
       title: "Redux toolkit",
     },
     {
+      id: 8,
+      title: "Typescript",
+    },
+    {
       id: 3,
       title: "NextJs",
     },
