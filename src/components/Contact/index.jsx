@@ -33,7 +33,7 @@ function Contact() {
     e.target.reset();
   };
   return (
-    <section id="contact">
+    <section style={{marginTop: '1500px'}} id="contact">
       <h5>Get In Touch</h5>
       <h2>Contact Me</h2>
       <div className="container contact__container">

@@ -72,7 +72,7 @@ function Portfolio() {
     },
   ];
   return (
-    <section id="portfolio">
+    <section style={{paddingTop: '700px'}} id="portfolio">
       <h5>What i Do</h5>
       <h2>My Projects</h2>
       <Fade>

@@ -18,16 +18,20 @@ function Experience() {
       id: 3,
       title: "Javascript ES6",
     },
-    {
-      id: 4,
-      title: "Responsive",
-    },
+    // {
+    //   id: 4,
+    //   title: "Responsive",
+    // },
   ];
 
   const Frameworks = [
     {
       id: 1,
-      title: "React ( Hook )",
+      title: "React ( Functional component )",
+    },
+    {
+      id: 9,
+      title: "Typescript",
     },
     {
       id: 2,
@@ -55,6 +59,10 @@ function Experience() {
     },
     {
       id: 7,
+      title: "Ant Design",
+    },
+    {
+      id: 8,
       title: "Other Libraries ( React Hook Form, React Router Dom, etc. )",
     },
   ];
@@ -68,6 +76,10 @@ function Experience() {
       id: 2,
       title: "Gitlab",
     },
+    {
+      id: 2,
+      title: "Bitbucket",
+    },
   ];
   const API = [
     {
@@ -77,6 +89,28 @@ function Experience() {
     {
       id: 2,
       title: "Graphql",
+    },
+  ];
+  const Otherstools = [
+    {
+      id: 1,
+      title: "Agile/Scrum",
+    },
+    {
+      id: 2,
+      title: "Nginx",
+    },
+    {
+      id: 3,
+      title: "CI/CD",
+    },
+    {
+      id: 4,
+      title: "Hasura",
+    },
+    {
+      id: 4,
+      title: "Jira",
     },
   ];
   const Others = [
@@ -104,7 +138,7 @@ function Experience() {
       <Fade>
         <div className="container experience__container">
           <div className="experience__frontend">
-            <h3>Programming Languages</h3>
+            <h3>Basic Programming Languages</h3>
             <div className="experience__content">
               {_.map(ProgramingLanguages, (item, index) => {
                 return (
@@ -181,6 +215,25 @@ function Experience() {
           </div>
           <div className="experience__frontend">
             <h3>Others</h3>
+            <div className="experience__content">
+              {_.map(Otherstools, (item, index) => {
+                return (
+                  <article
+                    key={_.get(item, "id")}
+                    className="experience__details"
+                  >
+                    <BsPatchCheckFill className="experience__details-icon" />
+                    <div>
+                      <h4>{_.get(item, "title")}</h4>
+                      <small className="text-light">Experienced</small>
+                    </div>
+                  </article>
+                );
+              })}
+            </div>
+          </div>
+          <div className="experience__frontend">
+            <h3>Others skill</h3>
             <div className="experience__content">
               {_.map(Others, (item, index) => {
                 return (

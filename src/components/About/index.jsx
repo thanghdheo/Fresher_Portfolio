@@ -13,13 +13,13 @@ function About() {
       id: 1,
       title: "Education",
       icon: <MdOutlineSchool />,
-      desc: " Studied Information Technology at Saigon University in 2018-2022",
+      desc: " Study Information Technology at Saigon University in 2018-2023",
     },
     {
       id: 2,
       title: "Experience",
       icon: <FaAward />,
-      desc: " 6 months experience of working as a web developer at Ho Chi Minh city.",
+      desc: " 1 year experience of working as a web developer at Ho Chi Minh city.",
     },
   ];
   return (
@@ -60,8 +60,8 @@ function About() {
           <Fade bottom>
             <p>
               Hi guys ! I'm Hồ Đức Thắng, I was born in 2000 and I'm from Vung
-              Tau city. I'm Fresher Front-end Developer. I have 6 months
-              experience of working as a web developer at Ho Chi Minh city.{" "}
+              Tau city. I'm Front-end Developer. I have 1 month experience of
+              working as a web developer at Ho Chi Minh city.{" "}
             </p>
 
             <p>

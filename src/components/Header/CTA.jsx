@@ -1,5 +1,5 @@
 import React from "react";
-import CV from "../../asset/CV_Hồ Đức Thắng_Frontend_Developer.pdf";
+import CV from "../../asset/CV_Ho Duc Thang_Frontend_Developer.pdf";
 
 function CTA() {
   return (
