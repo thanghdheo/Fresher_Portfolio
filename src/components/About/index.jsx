@@ -60,7 +60,7 @@ function About() {
           <Fade bottom>
             <p>
               Hi guys ! I'm Hồ Đức Thắng, I was born in 2000 and I'm from Vung
-              Tau city. I'm Front-end Developer. I have 1 month experience of
+              Tau city. I'm Front-end Developer. I have 1 year experience of
               working as a web developer at Ho Chi Minh city.{" "}
             </p>
 
